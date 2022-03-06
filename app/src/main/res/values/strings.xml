@@ -1,0 +1,126 @@
+<resources>
+    <string name="app_name">Posisiin 0.0</string>
+    <string-array name="lokasi">
+        <item>Ruang 306 A</item>
+        <item>Ruang 306 B</item>
+        <item>Ruang 306 C</item>
+        <item>Ruang 306 D</item>
+        <item>Koridor 1</item>
+        <item>Toilet PI</item>
+        <item>Toilet PA</item>
+        <item>Ruang 302 A</item>
+        <item>Ruang 302 B</item>
+        <item>Ruang 302 C</item>
+        <item>Ruang 302 D</item>
+        <item>Koridor 2</item>
+        <item>Ruang 307 A</item>
+        <item>Ruang 307 B</item>
+        <item>Ruang 307 C</item>
+        <item>Ruang 307 D</item>
+        <item>Lobi 1</item>
+        <item>Koridor 3</item>
+        <item>Ruang 303 A</item>
+        <item>Ruang 303 B</item>
+        <item>Ruang 303 C</item>
+        <item>Ruang 303 D</item>
+        <item>Ruang 304 A</item>
+        <item>Ruang 304 B</item>
+        <item>Ruang 304 C</item>
+        <item>Ruang 304 D</item>
+        <item>Koridor 4</item>
+        <item>Lobi 2 A</item>
+        <item>Lobi 2 B</item>
+        <item>Lobi 3</item>
+        <item>Koridor 5</item>
+        <item>Ruang 305 A</item>
+        <item>Ruang 305 B</item>
+        <item>Ruang 305 C</item>
+        <item>Ruang 305 D</item>
+        <item>Aula A</item>
+        <item>Aula B</item>
+        <item>Aula C</item>
+    </string-array>
+
+    <array name="lokasi_x">
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>1</item>
+        <item>2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>8</item>
+        <item>7</item>
+        <item>8</item>
+        <item>7</item>
+        <item>8</item>
+        <item>7</item>
+        <item>8</item>
+        <item>4</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>4</item>
+        <item>7</item>
+        <item>8</item>
+        <item>7</item>
+        <item>8</item>
+        <item>1</item>
+        <item>4</item>
+        <item>8</item>
+    </array>
+
+    <array name="lokasi_y">
+        <item>1</item>
+        <item>1</item>
+        <item>2</item>
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>3</item>
+        <item>3</item>
+        <item>4</item>
+        <item>4</item>
+        <item>5</item>
+        <item>5</item>
+        <item>5</item>
+        <item>6</item>
+        <item>6</item>
+        <item>9</item>
+        <item>10</item>
+        <item>7</item>
+        <item>7</item>
+        <item>8</item>
+        <item>8</item>
+        <item>11</item>
+        <item>11</item>
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>12</item>
+        <item>13</item>
+        <item>16</item>
+        <item>16</item>
+        <item>15</item>
+        <item>15</item>
+        <item>16</item>
+        <item>16</item>
+        <item>19</item>
+        <item>19</item>
+        <item>19</item>
+    </array>
+</resources>

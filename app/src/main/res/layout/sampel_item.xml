@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frame_label"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/tosca">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_label_sampel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruang 307"
+                    android:layout_marginStart="16dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:textSize="16dp"
+                    android:textColor="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/btn_delete_sampel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/tosca"
+                    android:src="@drawable/ic_baseline_delete_forever_18"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_ap1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/frame_label"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 1"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap1_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap1_dbm"
+                android:text="- 70"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap1_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/ireng" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ap2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap1"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 2"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap2_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap2_dbm"
+                android:text="- 70"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap2_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/ireng" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_ap3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap2"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_ap3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Access Point 3"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap3_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_toStartOf="@id/tv_ap3_dbm"
+                android:text="- 70"
+                android:textColor="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_ap3_dbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="18dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=" dBm"
+                android:textColor="@color/ireng" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_creation_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_ap3"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            android:text="creation time"
+            android:textColor="#909090"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TambahSampelActivity">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:id="@+id/toolbar_tambah_sampel"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_back_tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/white"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:tint="@color/ireng" />
+
+            <TextView
+                android:id="@+id/tv_tambah_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Tambah data sampel"
+                android:textColor="@color/ireng"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    <ImageView
+        android:id="@+id/iv_tambah_sampel"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:src="@drawable/scan"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tambah_info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_tambah_sampel"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tv_tambah_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Data kekuatan sinyal transmitter"
+        android:textColor="@color/ireng"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/lin_lay_ap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_tambah_sampel" />
+
+    <LinearLayout
+        android:id="@+id/lin_lay_ap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/et_label_lokasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tambah_info">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_ap1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:hint="Access point 1"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/tosca"
+            app:hintTextColor="@color/tosca"
+            app:startIconDrawable="@drawable/ic_baseline_wifi_24"
+            app:startIconTint="@color/ireng"
+            app:suffixText="dBm"
+            app:suffixTextColor="@color/ireng">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_ap1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/ireng" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_ap2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:hint="Access point 2"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/tosca"
+            app:hintTextColor="@color/tosca"
+            app:startIconDrawable="@drawable/ic_baseline_wifi_24"
+            app:startIconTint="@color/ireng"
+            app:suffixText="dBm"
+            app:suffixTextColor="@color/ireng">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_ap2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/ireng" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/et_ap3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginEnd="80dp"
+            android:hint="Access point 3"
+            app:boxCornerRadiusBottomEnd="13dp"
+            app:boxCornerRadiusBottomStart="13dp"
+            app:boxCornerRadiusTopEnd="13dp"
+            app:boxCornerRadiusTopStart="13dp"
+            app:boxStrokeColor="@color/tosca"
+            app:hintTextColor="@color/tosca"
+            app:startIconDrawable="@drawable/ic_baseline_wifi_24"
+            app:startIconTint="@color/ireng"
+            app:suffixText="dBm"
+            app:suffixTextColor="@color/ireng">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_ap3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/ireng" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/et_label_lokasi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:hint="Label lokasi"
+        app:boxCornerRadiusBottomEnd="13dp"
+        app:boxCornerRadiusBottomStart="13dp"
+        app:boxCornerRadiusTopEnd="13dp"
+        app:boxCornerRadiusTopStart="13dp"
+        app:boxStrokeColor="@color/tosca"
+        app:hintTextColor="@color/tosca"
+        app:endIconTint="@color/ireng"
+        app:layout_constraintBottom_toTopOf="@+id/lin_lay_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lin_lay_ap"
+        app:startIconDrawable="@drawable/ic_baseline_label_important_24"
+        app:startIconTint="@color/ireng">
+
+        <AutoCompleteTextView
+            android:id="@+id/ac_label"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:editable="false"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/ireng"
+            android:textSize="16sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pindai_wifi"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#F6F6F6"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Pindai jaringan wi-fi"
+            android:textAllCaps="false"
+            android:textColor="#717173"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_simpan_data"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="@color/tosca"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Simpan data sampel"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
